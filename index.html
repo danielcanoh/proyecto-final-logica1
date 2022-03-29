@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pacman</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <h1>PACMAN</h1>
+  <img src="./assets/pacman.png" alt="Pacman">
+  <p class="message">Cómete todas las basuritas sin tocar los obstáculos de color rojo para poder ganar.</p>
+  <p class="message">Mueve el personaje usando las flechas del teclado.</p>
+  <div class="container">
+    <img class="start" src="assets/start.png" alt="Comenzar">
+    <button class="btnNew">Empezar</button>
+    <img class="winner hidden" src="assets/win.png" alt="Ganaste">
+    <img class="game-over hidden" src="assets/game-over.png" alt="Perdiste">
+    <canvas class="" id="miCanvas"></canvas>
+  </div>
+  <p class="score">Puntaje: <span class="total-score">0</span></p>
+  <script src="js/pacman.js"></script>
+  <script src="js/pared.js"></script>
+  <script src="js/obstaculo.js"></script>
+  <script src="js/basura.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
